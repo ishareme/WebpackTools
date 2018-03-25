@@ -1,0 +1,30 @@
+{
+    "extends": "eslint:recommended",
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true,
+        "mocha": true
+    },
+    "globals": {
+        "$": true,
+    },
+    "parser": "babel-eslint",
+    "rules": {
+        "semi": [2, "always"],
+        "quotes": [2, "single", {
+            "avoidEscape": true,
+            "allowTemplateLiterals": true
+        }],
+        "comma-dangle": ["error", {
+            "arrays": "always-multiline",
+            "objects": "always-multiline",
+            "imports": "always-multiline",
+            "exports": "always-multiline",
+            "functions": "ignore"
+        }],
+        "no-console": [0, { allow: ["warn", "error"] }],
+        "space-before-function-paren": 0,
+        "no-multiple-empty-lines": [2, { "max": 1 }]
+    }
+}
