@@ -53,7 +53,12 @@ module.exports = merge(baseConfig, {
         new webpack.DefinePlugin({
             'process.env': env
         }),
-        new CleanWebpackPlugin(['dist']),
+        new CleanWebpackPlugin(['dist/main.*.js','dist/manifest.*.js',],　 //匹配删除的文件
+            {
+                root: __dirname,       　　　　　　　　　　//根目录
+                verbose:  true,        　　　　　　　　　　//开启在控制台输出信息
+                dry:      false        　　　　　　　　　　//启用删除文件
+            }),
         new ExtractTextPlugin({
             filename: '/css/[name].[hash:8].css',
             allChunks:true,
