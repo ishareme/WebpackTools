@@ -13,7 +13,12 @@
  
 ## 2. For Vue Mpa
 
-> 等我哦，搬个小板凳 (๑•̀ㅂ•́)و✧
+#### Hot Module Replacement ✅
+#### scss  ✅
+#### postcss  ✅
+#### postcss-sprite  ✅
+#### html hot ❎
+#### MPA ✅
 
 ## 3. For Common Spa
 
